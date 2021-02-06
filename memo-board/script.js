@@ -9,6 +9,7 @@ if (inputVal === ""){
 } else {
     var table = document.getElementById("myTable");
     var tRow = table.insertRow(0);
+    tRow.className = "tRow";
     var tText = document.createTextNode(inputVal);
     tRow.appendChild(tText);
  
