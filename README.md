@@ -1,2 +1,2 @@
-# sticky-notes
-Just a makeshift Sticky Note App.
+Just a makeshift sticky note app
+
