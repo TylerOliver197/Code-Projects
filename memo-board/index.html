@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
     <head>
         <link href="style.css" rel="stylesheet">
         <title id="title"></title>
@@ -8,18 +9,30 @@
         <meta name="description" content="Note Taking App">
         <meta name="author" content="Tyler Oliver">
     </head>
-    <body>
-        <header class="header">
-            <h1>Note Taking App</h1>
-            <p>Add A New Note:</p>
-        </header>
-        <div class="inputDiv">
-            <label id="noteLabel" for="noteInput">Note:</label><br>
-            <input id="noteInput" type="text">
-            <button id="submit-button" type="submit" onclick="createTable()">Submit</button><br>
-            <table id="myTable"></table>
-        </div>
-<script type='text/javascript' src="script.js"></script>
 
+    <body>
+
+        <header class="header">
+            <h1>Sticky Note Taking App</h1>
+            <p>Fill out the Title and Note sections to create your notes!</p>
+        </header>
+            <div id="note-container">
+            <input id="titleInput" type="text" placeholder="Title"><br>
+            <textarea id="noteInput" type="text" placeholder="Write down your note!" rows="4" cols="50"></textarea><br>
+            <button id="submit-button" type="submit" onclick="createList()">Submit</button>
+            </div>
+        <ul id="myUL"></ul> 
+
+<script type='text/javascript' src="script.js"></script>
     </body>
+
+<!-- Some bugs i've noticed
+
+    -There is not a title on the alert for a note
+    -When you press the enter button in the noteInput textarea it does not recognize it when you click submit. Thus no indent
+    -The titleInput could be altered so that you cannot type anymore after reaching the max characters
+    -The see More button placement is odd and not consistent
+
+-->
+
 </html>
