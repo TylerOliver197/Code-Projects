@@ -1,1 +1,1 @@
-ReadME file
+Just a makeshift sticky note app.
